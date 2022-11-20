@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+* {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
+  margin-left: 18%;
+  margin-top: 5%;
+  width: 1200px;
+  height: 700px;
+  border: 1px solid #2628421f;
+  border-radius: 10px;
+}
+nav {
+  background-color: #f7f8fc;
+  border: 1px solid #2628421f;
+
+  height: 48px;
+  width: 390px;
+  align-items: center;
+}
+.work_item {
+  padding-top: 4%;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 390px;
+  height: 48px;
 }
-
-.App-link {
-  color: #61dafb;
+.part {
+  background-color: #f7f8fc;
+  text-align: center;
+  width: 148px;
+  height: 48px;
+  box-sizing: border-box;
+  display: block;
+  align-items: center;
+  border-right: 1px solid #2628421f;
+  border-bottom: 1px solid #2628421f;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.days {
+  display: flex;
+}
+.day {
+  align-items: center;
+  width: 30px;
+  height: 22px;
+  border-right: 1px solid #2628421f;
+  border-top: 1px solid #2628421f;
+}
+main {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(to right, black 95%, transparent 100%);
+  mask-image: linear-gradient(to right, black 95%, transparent 100%);
+}
+.tasks {
+  width: 390px;
+  height: 652px;
+  border-right: 1px solid #2628421f;
+}
+.task {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 390px;
+  height: 40px;
+  border-bottom: 1px solid #2628421f;
+}
+.table {
+  margin-bottom: 48px;
+}
+.table_base {
+  width: 19.1px;
+  height: 650px;
+  border: 0.1px solid #2628421f;
+}
+.table_date {
+  display: flex;
+}
+.table_overflow {
+  display: flex;
 }
